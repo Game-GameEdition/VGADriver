@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGADriverFinal
-Sun Jun  7 19:30:09 2026
+Sun Jun  7 20:15:03 2026
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun  7 19:30:09 2026          ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun  7 20:15:03 2026          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; VGADriverFinal                                 ;
 ; Top-level Entity Name              ; VGADriver                                      ;
@@ -88,7 +88,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                            ; VGADriver          ; VGADriverFinal     ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -186,36 +186,37 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; VGADriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/VGADriver.sv                                         ;         ;
-; Counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/Counter.sv                                           ;         ;
-; RegisterFourBit.sv               ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv                                   ;         ;
-; EnableCounter.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/EnableCounter.sv                                     ;         ;
-; MuxandDecoder.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv                                     ;         ;
-; VSyncCounter.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv                                      ;         ;
-; HSyncCounter.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv                                      ;         ;
-; SyncCounter.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/SyncCounter.sv                                       ;         ;
-; ROMink.v                         ; yes             ; User Wizard-Generated File   ; C:/ECE204/oiwejg/VGADriver/ROMink.v                                             ;         ;
-; bigMux.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/bigMux.sv                                            ;         ;
-; AddressConverter.sv              ; yes             ; User SystemVerilog HDL File  ; C:/ECE204/oiwejg/VGADriver/AddressConverter.sv                                  ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_64h1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf                               ;         ;
-; db/decode_h7a.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/ECE204/oiwejg/VGADriver/db/decode_h7a.tdf                                    ;         ;
-; db/decode_aj9.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/ECE204/oiwejg/VGADriver/db/decode_aj9.tdf                                    ;         ;
-; db/mux_g3b.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/ECE204/oiwejg/VGADriver/db/mux_g3b.tdf                                       ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; VGADriver.sv                     ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/VGADriver.sv                                   ;         ;
+; Counter.sv                       ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/Counter.sv                                     ;         ;
+; RegisterFourBit.sv               ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/RegisterFourBit.sv                             ;         ;
+; EnableCounter.sv                 ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/EnableCounter.sv                               ;         ;
+; MuxandDecoder.sv                 ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/MuxandDecoder.sv                               ;         ;
+; VSyncCounter.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/VSyncCounter.sv                                ;         ;
+; HSyncCounter.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv                                ;         ;
+; SyncCounter.sv                   ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/SyncCounter.sv                                 ;         ;
+; ROMink.v                         ; yes             ; User Wizard-Generated File             ; C:/ECE204/victorbranch/VGADriver/ROMink.v                                       ;         ;
+; bigMux.sv                        ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/bigMux.sv                                      ;         ;
+; AddressConverter.sv              ; yes             ; User SystemVerilog HDL File            ; C:/ECE204/victorbranch/VGADriver/AddressConverter.sv                            ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_64h1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf                         ;         ;
+; mifdata.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/ECE204/victorbranch/VGADriver/mifdata.mif                                    ;         ;
+; db/decode_h7a.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/ECE204/victorbranch/VGADriver/db/decode_h7a.tdf                              ;         ;
+; db/decode_aj9.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/ECE204/victorbranch/VGADriver/db/decode_aj9.tdf                              ;         ;
+; db/mux_g3b.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/ECE204/victorbranch/VGADriver/db/mux_g3b.tdf                                 ;         ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -277,13 +278,13 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                           ;
-+------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+------+
-; Name                                                                                     ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF  ;
-+------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+------+
-; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 65536        ; 16           ; --           ; --           ; 1048576 ; None ;
-+------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                  ;
++------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+-------------+
+; Name                                                                                     ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF         ;
++------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+-------------+
+; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 65536        ; 16           ; --           ; --           ; 1048576 ; mifData.mif ;
++------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+-------------+
 
 
 +-------------------------------------------------------------------------------------------------------------+
@@ -607,60 +608,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Jun  7 19:30:04 2026
+    Info: Processing started: Sun Jun  7 20:14:58 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGADriverFinal -c VGADriverFinal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vgadriver.sv
-    Info (12023): Found entity 1: VGADriver File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 1
+    Info (12023): Found entity 1: VGADriver File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: Counter File: C:/ECE204/oiwejg/VGADriver/Counter.sv Line: 2
+    Info (12023): Found entity 1: Counter File: C:/ECE204/victorbranch/VGADriver/Counter.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file registerfourbit.sv
-    Info (12023): Found entity 1: RegisterNBit File: C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv Line: 2
+    Info (12023): Found entity 1: RegisterNBit File: C:/ECE204/victorbranch/VGADriver/RegisterFourBit.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file enablecounter.sv
-    Info (12023): Found entity 1: EnableCounter File: C:/ECE204/oiwejg/VGADriver/EnableCounter.sv Line: 3
+    Info (12023): Found entity 1: EnableCounter File: C:/ECE204/victorbranch/VGADriver/EnableCounter.sv Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file muxanddecoder.sv
-    Info (12023): Found entity 1: Mux_4 File: C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv Line: 1
-    Info (12023): Found entity 2: Decoder2_4 File: C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv Line: 9
+    Info (12023): Found entity 1: Mux_4 File: C:/ECE204/victorbranch/VGADriver/MuxandDecoder.sv Line: 1
+    Info (12023): Found entity 2: Decoder2_4 File: C:/ECE204/victorbranch/VGADriver/MuxandDecoder.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file vsynccounter.sv
-    Info (12023): Found entity 1: VSyncCounter File: C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv Line: 1
+    Info (12023): Found entity 1: VSyncCounter File: C:/ECE204/victorbranch/VGADriver/VSyncCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hsynccounter.sv
-    Info (12023): Found entity 1: HSyncCounter File: C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv Line: 1
+    Info (12023): Found entity 1: HSyncCounter File: C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file synccounter.sv
-    Info (12023): Found entity 1: SyncCounter File: C:/ECE204/oiwejg/VGADriver/SyncCounter.sv Line: 1
+    Info (12023): Found entity 1: SyncCounter File: C:/ECE204/victorbranch/VGADriver/SyncCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgatestbench.sv
-    Info (12023): Found entity 1: VgaTestbench File: C:/ECE204/oiwejg/VGADriver/VGATestbench.sv Line: 31
+    Info (12023): Found entity 1: VgaTestbench File: C:/ECE204/victorbranch/VGADriver/VGATestbench.sv Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file romink.v
-    Info (12023): Found entity 1: ROMink File: C:/ECE204/oiwejg/VGADriver/ROMink.v Line: 40
+    Info (12023): Found entity 1: ROMink File: C:/ECE204/victorbranch/VGADriver/ROMink.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file bigmux.sv
-    Info (12023): Found entity 1: bigMux File: C:/ECE204/oiwejg/VGADriver/bigMux.sv Line: 1
+    Info (12023): Found entity 1: bigMux File: C:/ECE204/victorbranch/VGADriver/bigMux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file addressconverter.sv
-    Info (12023): Found entity 1: AddressConverter File: C:/ECE204/oiwejg/VGADriver/AddressConverter.sv Line: 1
+    Info (12023): Found entity 1: AddressConverter File: C:/ECE204/victorbranch/VGADriver/AddressConverter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fixedromink.v
-    Info (12023): Found entity 1: FixedROMink File: C:/ECE204/oiwejg/VGADriver/FixedROMink.v Line: 40
+    Info (12023): Found entity 1: FixedROMink File: C:/ECE204/victorbranch/VGADriver/FixedROMink.v Line: 40
 Info (12127): Elaborating entity "VGADriver" for the top level hierarchy
-Info (12128): Elaborating entity "EnableCounter" for hierarchy "EnableCounter:enable_counter" File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 32
-Info (12128): Elaborating entity "SyncCounter" for hierarchy "SyncCounter:sync_counter" File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 44
-Info (12128): Elaborating entity "HSyncCounter" for hierarchy "SyncCounter:sync_counter|HSyncCounter:hsync_counter" File: C:/ECE204/oiwejg/VGADriver/SyncCounter.sv Line: 25
-Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(18): truncated value with size 32 to match size of target (1) File: C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(22): truncated value with size 32 to match size of target (1) File: C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv Line: 22
-Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(23): truncated value with size 32 to match size of target (1) File: C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv Line: 23
-Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(24): truncated value with size 32 to match size of target (10) File: C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv Line: 24
-Info (12128): Elaborating entity "Counter" for hierarchy "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst" File: C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv Line: 36
-Info (12128): Elaborating entity "RegisterNBit" for hierarchy "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst|RegisterNBit:register1" File: C:/ECE204/oiwejg/VGADriver/Counter.sv Line: 25
-Info (12128): Elaborating entity "VSyncCounter" for hierarchy "SyncCounter:sync_counter|VSyncCounter:vsync_counter" File: C:/ECE204/oiwejg/VGADriver/SyncCounter.sv Line: 34
-Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(16): truncated value with size 32 to match size of target (1) File: C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(17): truncated value with size 32 to match size of target (1) File: C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv Line: 17
-Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(18): truncated value with size 32 to match size of target (1) File: C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(19): truncated value with size 32 to match size of target (10) File: C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv Line: 19
-Info (12128): Elaborating entity "bigMux" for hierarchy "bigMux:big_mux" File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 52
-Info (12128): Elaborating entity "Mux_4" for hierarchy "bigMux:big_mux|Mux_4:mux_top" File: C:/ECE204/oiwejg/VGADriver/bigMux.sv Line: 7
-Info (12128): Elaborating entity "AddressConverter" for hierarchy "AddressConverter:addy_convert" File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 58
-Warning (10230): Verilog HDL assignment warning at AddressConverter.sv(8): truncated value with size 32 to match size of target (19) File: C:/ECE204/oiwejg/VGADriver/AddressConverter.sv Line: 8
-Info (12128): Elaborating entity "ROMink" for hierarchy "ROMink:minkhoa" File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 66
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component" File: C:/ECE204/oiwejg/VGADriver/ROMink.v Line: 86
-Info (12130): Elaborated megafunction instantiation "ROMink:minkhoa|altsyncram:altsyncram_component" File: C:/ECE204/oiwejg/VGADriver/ROMink.v Line: 86
-Info (12133): Instantiated megafunction "ROMink:minkhoa|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE204/oiwejg/VGADriver/ROMink.v Line: 86
+Info (12128): Elaborating entity "EnableCounter" for hierarchy "EnableCounter:enable_counter" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 32
+Info (12128): Elaborating entity "SyncCounter" for hierarchy "SyncCounter:sync_counter" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 44
+Info (12128): Elaborating entity "HSyncCounter" for hierarchy "SyncCounter:sync_counter|HSyncCounter:hsync_counter" File: C:/ECE204/victorbranch/VGADriver/SyncCounter.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(18): truncated value with size 32 to match size of target (1) File: C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(22): truncated value with size 32 to match size of target (1) File: C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(23): truncated value with size 32 to match size of target (1) File: C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv Line: 23
+Warning (10230): Verilog HDL assignment warning at HSyncCounter.sv(24): truncated value with size 32 to match size of target (10) File: C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv Line: 24
+Info (12128): Elaborating entity "Counter" for hierarchy "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst" File: C:/ECE204/victorbranch/VGADriver/HSyncCounter.sv Line: 36
+Info (12128): Elaborating entity "RegisterNBit" for hierarchy "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst|RegisterNBit:register1" File: C:/ECE204/victorbranch/VGADriver/Counter.sv Line: 25
+Info (12128): Elaborating entity "VSyncCounter" for hierarchy "SyncCounter:sync_counter|VSyncCounter:vsync_counter" File: C:/ECE204/victorbranch/VGADriver/SyncCounter.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(16): truncated value with size 32 to match size of target (1) File: C:/ECE204/victorbranch/VGADriver/VSyncCounter.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(17): truncated value with size 32 to match size of target (1) File: C:/ECE204/victorbranch/VGADriver/VSyncCounter.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(18): truncated value with size 32 to match size of target (1) File: C:/ECE204/victorbranch/VGADriver/VSyncCounter.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(19): truncated value with size 32 to match size of target (10) File: C:/ECE204/victorbranch/VGADriver/VSyncCounter.sv Line: 19
+Info (12128): Elaborating entity "bigMux" for hierarchy "bigMux:big_mux" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 52
+Info (12128): Elaborating entity "Mux_4" for hierarchy "bigMux:big_mux|Mux_4:mux_top" File: C:/ECE204/victorbranch/VGADriver/bigMux.sv Line: 7
+Info (12128): Elaborating entity "AddressConverter" for hierarchy "AddressConverter:addy_convert" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 58
+Warning (10230): Verilog HDL assignment warning at AddressConverter.sv(8): truncated value with size 32 to match size of target (19) File: C:/ECE204/victorbranch/VGADriver/AddressConverter.sv Line: 8
+Info (12128): Elaborating entity "ROMink" for hierarchy "ROMink:minkhoa" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 66
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component" File: C:/ECE204/victorbranch/VGADriver/ROMink.v Line: 86
+Info (12130): Elaborated megafunction instantiation "ROMink:minkhoa|altsyncram:altsyncram_component" File: C:/ECE204/victorbranch/VGADriver/ROMink.v Line: 86
+Info (12133): Instantiated megafunction "ROMink:minkhoa|altsyncram:altsyncram_component" with the following parameter: File: C:/ECE204/victorbranch/VGADriver/ROMink.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "mifData.mif"
@@ -677,181 +678,180 @@ Info (12133): Instantiated megafunction "ROMink:minkhoa|altsyncram:altsyncram_co
     Info (12134): Parameter "width_a" = "16"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_64h1.tdf
-    Info (12023): Found entity 1: altsyncram_64h1 File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 34
+    Info (12023): Found entity 1: altsyncram_64h1 File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 34
 Info (12128): Elaborating entity "altsyncram_64h1" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File C:/ECE204/oiwejg/VGADriver/mifData.mif -- setting all initial values to 0 File: C:/ECE204/oiwejg/VGADriver/ROMink.v Line: 86
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_h7a.tdf
-    Info (12023): Found entity 1: decode_h7a File: C:/ECE204/oiwejg/VGADriver/db/decode_h7a.tdf Line: 23
-Info (12128): Elaborating entity "decode_h7a" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|decode_h7a:decode3" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 45
+    Info (12023): Found entity 1: decode_h7a File: C:/ECE204/victorbranch/VGADriver/db/decode_h7a.tdf Line: 23
+Info (12128): Elaborating entity "decode_h7a" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|decode_h7a:decode3" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_aj9.tdf
-    Info (12023): Found entity 1: decode_aj9 File: C:/ECE204/oiwejg/VGADriver/db/decode_aj9.tdf Line: 23
-Info (12128): Elaborating entity "decode_aj9" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|decode_aj9:rden_decode" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 46
+    Info (12023): Found entity 1: decode_aj9 File: C:/ECE204/victorbranch/VGADriver/db/decode_aj9.tdf Line: 23
+Info (12128): Elaborating entity "decode_aj9" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|decode_aj9:rden_decode" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_g3b.tdf
-    Info (12023): Found entity 1: mux_g3b File: C:/ECE204/oiwejg/VGADriver/db/mux_g3b.tdf Line: 23
-Info (12128): Elaborating entity "mux_g3b" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|mux_g3b:mux2" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 47
+    Info (12023): Found entity 1: mux_g3b File: C:/ECE204/victorbranch/VGADriver/db/mux_g3b.tdf Line: 23
+Info (12128): Elaborating entity "mux_g3b" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|mux_g3b:mux2" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 47
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "row_count[9]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[8]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[7]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[6]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[5]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[4]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[3]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[2]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[1]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "column_count[9]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[8]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[7]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[6]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[5]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[4]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[3]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[2]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[1]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "row_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "column_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "row_count[9]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[8]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[7]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[6]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[5]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[4]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[3]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[2]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[1]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "column_count[9]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[8]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[7]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[6]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[5]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[4]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[3]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[2]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[1]" is missing source, defaulting to GND File: C:/ECE204/oiwejg/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "row_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "row_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
+    Warning (12110): Net "column_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
+    Warning (12110): Net "column_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a0" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 48
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a5" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a6" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a11" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 323
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a16" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 448
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a21" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 573
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a22" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 598
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a27" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 723
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a32" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 848
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a37" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 973
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a38" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 998
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a43" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1123
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a48" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1248
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a53" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1373
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a54" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1398
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a59" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1523
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a64" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1648
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a69" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1773
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a70" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1798
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a75" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1923
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a80" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2048
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a85" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a86" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a91" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2323
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a96" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2448
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a101" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2573
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a102" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2598
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a107" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2723
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a112" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2848
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a117" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2973
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a118" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2998
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a123" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3123
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a0" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 48
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a5" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 173
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a6" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 198
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a11" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 323
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a16" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 448
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a21" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 573
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a22" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 598
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a27" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 723
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a32" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 848
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a37" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 973
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a38" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 998
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a43" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1123
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a48" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1248
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a53" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1373
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a54" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1398
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a59" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1523
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a64" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1648
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a69" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1773
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a70" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1798
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a75" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1923
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a80" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2048
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a85" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2173
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a86" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2198
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a91" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2323
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a96" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2448
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a101" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2573
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a102" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2598
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a107" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2723
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a112" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2848
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a117" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2973
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a118" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2998
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a123" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3123
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a17" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 473
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a18" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 498
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a19" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 523
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a20" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 548
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a23" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 623
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a24" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 648
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a25" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 673
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a26" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 698
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a28" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 748
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a29" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 773
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a30" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 798
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a31" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 823
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a33" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 873
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a34" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 898
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a35" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 923
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a36" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 948
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a39" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1023
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a40" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1048
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a41" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1073
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a42" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1098
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a44" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1148
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a45" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a46" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a47" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1223
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a49" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1273
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a50" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1298
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a51" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1323
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a52" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1348
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a55" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1423
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a56" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1448
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a57" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1473
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a58" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1498
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a60" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1548
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a61" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1573
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a62" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1598
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a63" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1623
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a65" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1673
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a66" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1698
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a67" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1723
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a68" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1748
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a71" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1823
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a72" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1848
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a73" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1873
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a74" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1898
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a76" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1948
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a77" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1973
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a78" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 1998
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a79" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2023
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a81" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2073
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a82" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2098
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a83" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2123
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a84" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2148
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a87" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2223
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a88" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2248
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a89" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2273
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a90" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2298
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a92" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2348
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a93" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2373
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a94" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2398
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a95" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2423
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a97" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2473
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a98" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2498
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a99" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2523
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a100" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2548
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a103" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2623
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a104" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2648
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a105" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2673
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a106" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2698
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a108" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2748
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a109" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2773
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a110" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2798
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a111" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2823
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a113" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2873
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a114" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2898
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a115" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2923
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a116" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 2948
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a119" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3023
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a120" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3048
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a121" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3073
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a122" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3098
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a124" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3148
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a125" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a126" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a127" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 3223
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a17" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 473
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a18" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 498
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a19" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 523
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a20" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 548
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a23" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 623
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a24" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 648
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a25" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 673
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a26" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 698
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a28" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 748
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a29" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 773
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a30" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 798
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a31" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 823
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a33" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 873
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a34" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 898
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a35" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 923
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a36" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 948
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a39" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1023
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a40" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1048
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a41" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1073
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a42" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1098
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a44" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1148
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a45" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1173
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a46" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1198
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a47" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1223
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a49" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1273
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a50" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1298
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a51" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1323
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a52" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1348
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a55" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1423
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a56" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1448
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a57" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1473
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a58" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1498
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a60" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1548
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a61" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1573
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a62" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1598
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a63" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1623
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a65" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1673
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a66" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1698
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a67" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1723
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a68" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1748
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a71" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1823
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a72" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1848
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a73" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1873
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a74" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1898
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a76" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1948
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a77" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1973
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a78" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1998
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a79" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2023
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a81" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2073
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a82" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2098
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a83" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2123
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a84" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2148
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a87" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2223
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a88" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2248
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a89" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2273
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a90" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2298
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a92" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2348
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a93" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2373
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a94" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2398
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a95" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2423
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a97" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2473
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a98" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2498
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a99" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2523
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a100" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2548
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a103" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2623
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a104" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2648
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a105" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2673
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a106" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2698
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a108" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2748
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a109" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2773
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a110" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2798
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a111" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2823
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a113" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2873
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a114" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2898
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a115" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2923
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a116" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2948
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a119" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3023
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a120" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3048
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a121" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3073
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a122" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3098
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a124" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3148
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a125" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3173
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a126" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3198
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a127" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3223
 Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/ECE204/oiwejg/VGADriver/EnableCounter.sv Line: 7
+Info (13000): Registers with preset signals will power-up high File: C:/ECE204/victorbranch/VGADriver/EnableCounter.sv Line: 7
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 3 MSB VCC or GND address nodes from RAM block "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ALTSYNCRAM" File: C:/ECE204/oiwejg/VGADriver/db/altsyncram_64h1.tdf Line: 348
+Info (17036): Removed 3 MSB VCC or GND address nodes from RAM block "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ALTSYNCRAM" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 348
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
@@ -859,9 +859,9 @@ Info (21057): Implemented 97 device resources after synthesis - the final resour
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 69 logic cells
     Info (21064): Implemented 12 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 170 warnings
-    Info: Peak virtual memory: 4875 megabytes
-    Info: Processing ended: Sun Jun  7 19:30:09 2026
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 169 warnings
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Sun Jun  7 20:15:03 2026
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:12
 

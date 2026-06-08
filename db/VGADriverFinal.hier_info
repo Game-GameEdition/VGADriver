@@ -1,20 +1,20 @@
 |VGADriver
 clock => clock.IN3
 reset_n => reset_n.IN2
-hsync <= SyncCounter:sync_counter.hsync
-vsync <= SyncCounter:sync_counter.vsync
-red_display[0] <= bigMux:big_mux.y
-red_display[1] <= bigMux:big_mux.y
-red_display[2] <= bigMux:big_mux.y
-red_display[3] <= bigMux:big_mux.y
-green_display[0] <= bigMux:big_mux.y
-green_display[1] <= bigMux:big_mux.y
-green_display[2] <= bigMux:big_mux.y
-green_display[3] <= bigMux:big_mux.y
-blue_display[0] <= bigMux:big_mux.y
-blue_display[1] <= bigMux:big_mux.y
-blue_display[2] <= bigMux:big_mux.y
-blue_display[3] <= bigMux:big_mux.y
+hsync << SyncCounter:sync_counter.hsync
+vsync << SyncCounter:sync_counter.vsync
+red_display[0] << bigMux:big_mux.y
+red_display[1] << bigMux:big_mux.y
+red_display[2] << bigMux:big_mux.y
+red_display[3] << bigMux:big_mux.y
+green_display[0] << bigMux:big_mux.y
+green_display[1] << bigMux:big_mux.y
+green_display[2] << bigMux:big_mux.y
+green_display[3] << bigMux:big_mux.y
+blue_display[0] << bigMux:big_mux.y
+blue_display[1] << bigMux:big_mux.y
+blue_display[2] << bigMux:big_mux.y
+blue_display[3] << bigMux:big_mux.y
 
 
 |VGADriver|EnableCounter:enable_counter
