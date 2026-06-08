@@ -1,17 +1,17 @@
-Fitter Status : Successful - Sun Jun  7 20:15:08 2026
+Fitter Status : Successful - Sun Jun  7 22:40:05 2026
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : VGADriverFinal
 Top-level Entity Name : VGADriver
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 69 / 49,760 ( < 1 % )
-    Total combinational functions : 69 / 49,760 ( < 1 % )
-    Dedicated logic registers : 21 / 49,760 ( < 1 % )
-Total registers : 21
+Total logic elements : 172 / 49,760 ( < 1 % )
+    Total combinational functions : 169 / 49,760 ( < 1 % )
+    Dedicated logic registers : 27 / 49,760 ( < 1 % )
+Total registers : 27
 Total pins : 16 / 360 ( 4 % )
 Total virtual pins : 0
-Total memory bits : 12,288 / 1,677,312 ( < 1 % )
+Total memory bits : 786,432 / 1,677,312 ( 47 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 UFM blocks : 0 / 1 ( 0 % )

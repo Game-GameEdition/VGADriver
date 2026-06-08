@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGADriverFinal
-Sun Jun  7 20:15:03 2026
+Sun Jun  7 22:39:41 2026
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -16,28 +16,24 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated
- 16. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst
- 17. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst|RegisterNBit:register1
- 18. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst
- 19. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst|RegisterNBit:register1
- 20. Parameter Settings for User Entity Instance: ROMink:minkhoa|altsyncram:altsyncram_component
- 21. altsyncram Parameter Settings by Entity Instance
- 22. Port Connectivity Checks: "ROMink:minkhoa"
- 23. Port Connectivity Checks: "AddressConverter:addy_convert"
- 24. Port Connectivity Checks: "bigMux:big_mux"
- 25. Port Connectivity Checks: "SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst"
- 26. Port Connectivity Checks: "SyncCounter:sync_counter|VSyncCounter:vsync_counter"
- 27. Port Connectivity Checks: "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst"
- 28. Port Connectivity Checks: "SyncCounter:sync_counter|HSyncCounter:hsync_counter"
- 29. Port Connectivity Checks: "SyncCounter:sync_counter"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated
+ 15. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst
+ 16. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst|RegisterNBit:register1
+ 17. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst
+ 18. Parameter Settings for User Entity Instance: SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst|RegisterNBit:register1
+ 19. Parameter Settings for User Entity Instance: ROMink:minkhoa|altsyncram:altsyncram_component
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Port Connectivity Checks: "ROMink:minkhoa"
+ 22. Port Connectivity Checks: "AddressConverter:addy_convert"
+ 23. Port Connectivity Checks: "bigMux:big_mux"
+ 24. Port Connectivity Checks: "SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst"
+ 25. Port Connectivity Checks: "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -64,18 +60,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun  7 20:15:03 2026          ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun  7 22:39:41 2026          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; VGADriverFinal                                 ;
 ; Top-level Entity Name              ; VGADriver                                      ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 69                                             ;
-;     Total combinational functions  ; 69                                             ;
-;     Dedicated logic registers      ; 21                                             ;
-; Total registers                    ; 21                                             ;
+; Total logic elements               ; 172                                            ;
+;     Total combinational functions  ; 169                                            ;
+;     Dedicated logic registers      ; 27                                             ;
+; Total registers                    ; 27                                             ;
 ; Total pins                         ; 16                                             ;
 ; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 12,288                                         ;
+; Total memory bits                  ; 786,432                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
 ; Total PLLs                         ; 0                                              ;
 ; UFM blocks                         ; 0                                              ;
@@ -224,57 +220,55 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 69          ;
+; Estimated Total logic elements              ; 172         ;
 ;                                             ;             ;
-; Total combinational functions               ; 69          ;
+; Total combinational functions               ; 169         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 22          ;
-;     -- 3 input functions                    ; 8           ;
-;     -- <=2 input functions                  ; 39          ;
+;     -- 4 input functions                    ; 95          ;
+;     -- 3 input functions                    ; 34          ;
+;     -- <=2 input functions                  ; 40          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 51          ;
-;     -- arithmetic mode                      ; 18          ;
+;     -- normal mode                          ; 130         ;
+;     -- arithmetic mode                      ; 39          ;
 ;                                             ;             ;
-; Total registers                             ; 21          ;
-;     -- Dedicated logic registers            ; 21          ;
+; Total registers                             ; 27          ;
+;     -- Dedicated logic registers            ; 27          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 16          ;
-; Total memory bits                           ; 12288       ;
+; Total memory bits                           ; 786432      ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 33          ;
-; Total fan-out                               ; 340         ;
-; Average fan-out                             ; 2.54        ;
+; Maximum fan-out                             ; 123         ;
+; Total fan-out                               ; 2212        ;
+; Average fan-out                             ; 6.83        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                          ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                        ; Entity Name     ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |VGADriver                                ; 69 (2)              ; 21 (0)                    ; 12288       ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |VGADriver                                                                                                 ; VGADriver       ; work         ;
-;    |EnableCounter:enable_counter|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|EnableCounter:enable_counter                                                                    ; EnableCounter   ; work         ;
-;    |ROMink:minkhoa|                       ; 0 (0)               ; 0 (0)                     ; 12288       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa                                                                                  ; ROMink          ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 12288       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa|altsyncram:altsyncram_component                                                  ; altsyncram      ; work         ;
-;          |altsyncram_64h1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 12288       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated                   ; altsyncram_64h1 ; work         ;
-;    |SyncCounter:sync_counter|             ; 54 (0)              ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter                                                                        ; SyncCounter     ; work         ;
-;       |HSyncCounter:hsync_counter|        ; 19 (9)              ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|HSyncCounter:hsync_counter                                             ; HSyncCounter    ; work         ;
-;          |Counter:counter_inst|           ; 10 (0)              ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst                        ; Counter         ; work         ;
-;             |RegisterNBit:register1|      ; 10 (10)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst|RegisterNBit:register1 ; RegisterNBit    ; work         ;
-;       |VSyncCounter:vsync_counter|        ; 35 (14)             ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter                                             ; VSyncCounter    ; work         ;
-;          |Counter:counter_inst|           ; 21 (10)             ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst                        ; Counter         ; work         ;
-;             |RegisterNBit:register1|      ; 11 (11)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst|RegisterNBit:register1 ; RegisterNBit    ; work         ;
-;    |bigMux:big_mux|                       ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|bigMux:big_mux                                                                                  ; bigMux          ; work         ;
-;       |Mux_4:mux_blue|                    ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|bigMux:big_mux|Mux_4:mux_blue                                                                   ; Mux_4           ; work         ;
-;       |Mux_4:mux_green|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|bigMux:big_mux|Mux_4:mux_green                                                                  ; Mux_4           ; work         ;
-;       |Mux_4:mux_red|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|bigMux:big_mux|Mux_4:mux_red                                                                    ; Mux_4           ; work         ;
-;       |Mux_4:mux_top|                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|bigMux:big_mux|Mux_4:mux_top                                                                    ; Mux_4           ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                             ; Entity Name      ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------+------------------+--------------+
+; |VGADriver                                ; 169 (4)             ; 27 (0)                    ; 786432      ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |VGADriver                                                                                                      ; VGADriver        ; work         ;
+;    |AddressConverter:addy_convert|        ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|AddressConverter:addy_convert                                                                        ; AddressConverter ; work         ;
+;    |EnableCounter:enable_counter|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|EnableCounter:enable_counter                                                                         ; EnableCounter    ; work         ;
+;    |ROMink:minkhoa|                       ; 68 (0)              ; 6 (0)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa                                                                                       ; ROMink           ; work         ;
+;       |altsyncram:altsyncram_component|   ; 68 (0)              ; 6 (0)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa|altsyncram:altsyncram_component                                                       ; altsyncram       ; work         ;
+;          |altsyncram_64h1:auto_generated| ; 68 (0)              ; 6 (6)                     ; 786432      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated                        ; altsyncram_64h1  ; work         ;
+;             |decode_aj9:rden_decode|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|decode_aj9:rden_decode ; decode_aj9       ; work         ;
+;             |mux_g3b:mux2|                ; 60 (60)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|mux_g3b:mux2           ; mux_g3b          ; work         ;
+;    |SyncCounter:sync_counter|             ; 72 (0)              ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter                                                                             ; SyncCounter      ; work         ;
+;       |HSyncCounter:hsync_counter|        ; 26 (16)             ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|HSyncCounter:hsync_counter                                                  ; HSyncCounter     ; work         ;
+;          |Counter:counter_inst|           ; 10 (0)              ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst                             ; Counter          ; work         ;
+;             |RegisterNBit:register1|      ; 10 (10)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst|RegisterNBit:register1      ; RegisterNBit     ; work         ;
+;       |VSyncCounter:vsync_counter|        ; 46 (25)             ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter                                                  ; VSyncCounter     ; work         ;
+;          |Counter:counter_inst|           ; 21 (10)             ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst                             ; Counter          ; work         ;
+;             |RegisterNBit:register1|      ; 11 (11)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst|RegisterNBit:register1      ; RegisterNBit     ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -296,30 +290,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------+-----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                        ;
-+-------------------------------------------------------------------------------------------------------+---------------------------------------------------+
-; Register name                                                                                         ; Reason for Removal                                ;
-+-------------------------------------------------------------------------------------------------------+---------------------------------------------------+
-; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|address_reg_a[0..2]     ; Stuck at GND due to stuck port data_in            ;
-; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|out_address_reg_a[0..2] ; Stuck at GND due to stuck port data_in            ;
-; EnableCounter:enable_counter|alternate                                                                ; Merged with EnableCounter:enable_counter|enable_n ;
-; Total Number of Removed Registers = 7                                                                 ;                                                   ;
-+-------------------------------------------------------------------------------------------------------+---------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                     ;
-+------------------------------------------------------------------------------------------------+---------------------------+----------------------------------------------------------------------------------------------------+
-; Register name                                                                                  ; Reason for Removal        ; Registers Removed due to This Register                                                             ;
-+------------------------------------------------------------------------------------------------+---------------------------+----------------------------------------------------------------------------------------------------+
-; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|address_reg_a[2] ; Stuck at GND              ; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|out_address_reg_a[2] ;
-;                                                                                                ; due to stuck port data_in ;                                                                                                    ;
-; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|address_reg_a[1] ; Stuck at GND              ; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|out_address_reg_a[1] ;
-;                                                                                                ; due to stuck port data_in ;                                                                                                    ;
-; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|address_reg_a[0] ; Stuck at GND              ; ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|out_address_reg_a[0] ;
-;                                                                                                ; due to stuck port data_in ;                                                                                                    ;
-+------------------------------------------------------------------------------------------------+---------------------------+----------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++----------------------------------------+---------------------------------------------------+
+; Register name                          ; Reason for Removal                                ;
++----------------------------------------+---------------------------------------------------+
+; EnableCounter:enable_counter|alternate ; Merged with EnableCounter:enable_counter|enable_n ;
+; Total Number of Removed Registers = 1  ;                                                   ;
++----------------------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -327,7 +305,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 21    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 10    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 21    ;
@@ -353,6 +331,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |VGADriver|SyncCounter:sync_counter|VSyncCounter:vsync_counter|Counter:counter_inst|RegisterNBit:register1|q[9] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |VGADriver|bigMux:big_mux|Mux_4:mux_red|y[1]                                                                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |VGADriver|AddressConverter:addy_convert|pixeladdress[4]                                                        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |VGADriver|AddressConverter:addy_convert|pixeladdress[0]                                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------+
 
 
@@ -512,9 +493,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; d0      ; Input  ; Info     ; Stuck at GND                                                                        ;
-; y[6..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; y[11]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; y[0]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -528,15 +507,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SyncCounter:sync_counter|VSyncCounter:vsync_counter"                                                                               ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                       ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; out_count ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (1 bits) it drives; bit(s) "out_count[9..1]" have no fanouts ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "SyncCounter:sync_counter|HSyncCounter:hsync_counter|Counter:counter_inst"                                                                                                              ;
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -547,49 +517,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SyncCounter:sync_counter|HSyncCounter:hsync_counter"                                                                               ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                       ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; out_count ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (1 bits) it drives; bit(s) "out_count[9..1]" have no fanouts ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SyncCounter:sync_counter"                                                                                                                                                         ;
-+-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                                                                                                                ;
-+-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; h_display_count ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (10 bits) it drives.  The 9 most-significant bit(s) in the port expression will be connected to GND. ;
-; v_display_count ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (10 bits) it drives.  The 9 most-significant bit(s) in the port expression will be connected to GND. ;
-+-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 16                          ;
-; cycloneiii_ff         ; 21                          ;
+; cycloneiii_ff         ; 27                          ;
 ;     CLR               ; 7                           ;
 ;     CLR SCLR          ; 10                          ;
 ;     ENA CLR           ; 4                           ;
-; cycloneiii_lcell_comb ; 69                          ;
-;     arith             ; 18                          ;
+;     plain             ; 6                           ;
+; cycloneiii_lcell_comb ; 169                         ;
+;     arith             ; 39                          ;
 ;         2 data inputs ; 17                          ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 51                          ;
+;         3 data inputs ; 22                          ;
+;     normal            ; 130                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 22                          ;
-; cycloneiii_ram_block  ; 12                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 95                          ;
+; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.10                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 4.25                        ;
 +-----------------------+-----------------------------+
 
 
@@ -608,7 +560,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Jun  7 20:14:58 2026
+    Info: Processing started: Sun Jun  7 22:39:34 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGADriverFinal -c VGADriverFinal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -657,7 +609,7 @@ Warning (10230): Verilog HDL assignment warning at VSyncCounter.sv(19): truncate
 Info (12128): Elaborating entity "bigMux" for hierarchy "bigMux:big_mux" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 52
 Info (12128): Elaborating entity "Mux_4" for hierarchy "bigMux:big_mux|Mux_4:mux_top" File: C:/ECE204/victorbranch/VGADriver/bigMux.sv Line: 7
 Info (12128): Elaborating entity "AddressConverter" for hierarchy "AddressConverter:addy_convert" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 58
-Warning (10230): Verilog HDL assignment warning at AddressConverter.sv(8): truncated value with size 32 to match size of target (19) File: C:/ECE204/victorbranch/VGADriver/AddressConverter.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at AddressConverter.sv(9): truncated value with size 32 to match size of target (19) File: C:/ECE204/victorbranch/VGADriver/AddressConverter.sv Line: 9
 Info (12128): Elaborating entity "ROMink" for hierarchy "ROMink:minkhoa" File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 66
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component" File: C:/ECE204/victorbranch/VGADriver/ROMink.v Line: 86
 Info (12130): Elaborated megafunction instantiation "ROMink:minkhoa|altsyncram:altsyncram_component" File: C:/ECE204/victorbranch/VGADriver/ROMink.v Line: 86
@@ -689,180 +641,55 @@ Info (12128): Elaborating entity "decode_aj9" for hierarchy "ROMink:minkhoa|alts
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_g3b.tdf
     Info (12023): Found entity 1: mux_g3b File: C:/ECE204/victorbranch/VGADriver/db/mux_g3b.tdf Line: 23
 Info (12128): Elaborating entity "mux_g3b" for hierarchy "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|mux_g3b:mux2" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 47
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "row_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "column_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "row_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "row_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 17
-    Warning (12110): Net "column_count[9]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[8]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[7]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[6]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[5]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[4]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[3]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[2]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
-    Warning (12110): Net "column_count[1]" is missing source, defaulting to GND File: C:/ECE204/victorbranch/VGADriver/VGADriver.sv Line: 18
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a0" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 48
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a5" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a6" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a11" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 323
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a1" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 73
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a2" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 98
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a3" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 123
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a16" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 448
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a21" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 573
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a22" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 598
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a27" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 723
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a32" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 848
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a37" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 973
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a38" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 998
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a43" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1123
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a48" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1248
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a53" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1373
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a54" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1398
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a59" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1523
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a64" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1648
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a69" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1773
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a70" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1798
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a75" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1923
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a80" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2048
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a85" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a86" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a91" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2323
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a96" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2448
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a101" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2573
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a102" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2598
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a107" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2723
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a112" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2848
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a117" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2973
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a118" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2998
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a123" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3123
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a17" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 473
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a18" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 498
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a19" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 523
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a20" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 548
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a23" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 623
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a24" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 648
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a25" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 673
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a26" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 698
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a28" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 748
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a29" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 773
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a30" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 798
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a31" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 823
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a32" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 848
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a33" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 873
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a34" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 898
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a35" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 923
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a36" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 948
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a39" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1023
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a40" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1048
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a41" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1073
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a42" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1098
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a44" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1148
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a45" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a46" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a47" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1223
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a48" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1248
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a49" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1273
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a50" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1298
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a51" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1323
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a52" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1348
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a55" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1423
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a56" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1448
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a57" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1473
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a58" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1498
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a60" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1548
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a61" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1573
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a62" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1598
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a63" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1623
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a64" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1648
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a65" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1673
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a66" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1698
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a67" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1723
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a68" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1748
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a71" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1823
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a72" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1848
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a73" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1873
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a74" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1898
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a76" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1948
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a77" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1973
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a78" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 1998
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a79" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2023
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a80" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2048
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a81" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2073
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a82" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2098
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a83" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2123
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a84" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2148
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a87" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2223
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a88" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2248
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a89" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2273
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a90" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2298
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a92" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2348
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a93" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2373
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a94" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2398
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a95" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2423
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a96" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2448
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a97" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2473
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a98" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2498
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a99" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2523
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a100" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2548
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a103" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2623
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a104" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2648
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a105" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2673
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a106" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2698
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a108" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2748
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a109" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2773
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a110" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2798
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a111" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2823
+        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a112" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2848
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a113" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2873
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a114" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2898
         Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a115" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2923
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a116" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 2948
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a119" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3023
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a120" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3048
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a121" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3073
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a122" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3098
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a124" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3148
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a125" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3173
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a126" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3198
-        Warning (14320): Synthesized away node "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ram_block1a127" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 3223
-Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: C:/ECE204/victorbranch/VGADriver/EnableCounter.sv Line: 7
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 3 MSB VCC or GND address nodes from RAM block "ROMink:minkhoa|altsyncram:altsyncram_component|altsyncram_64h1:auto_generated|ALTSYNCRAM" File: C:/ECE204/victorbranch/VGADriver/db/altsyncram_64h1.tdf Line: 348
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 284 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 69 logic cells
-    Info (21064): Implemented 12 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 169 warnings
+    Info (21061): Implemented 172 logic cells
+    Info (21064): Implemented 96 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
     Info: Peak virtual memory: 4891 megabytes
-    Info: Processing ended: Sun Jun  7 20:15:03 2026
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Processing ended: Sun Jun  7 22:39:42 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

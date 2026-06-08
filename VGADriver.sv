@@ -19,11 +19,11 @@ logic [9:0] column_count;
 logic [18:0] pixeladdress;
 
 assign red_display = rgb_output[15:12];
-assign green_display = rgb_output[10:7];
-assign blue_display = rgb_output[4:1];
+assign green_display = rgb_output[11:8];
+assign blue_display = rgb_output[7:4];
 
-logic mux_input;
-assign mux_input = hdisplay & vdisplay;		
+logic display_image;
+assign display_image = ((row_count < 256) && (column_count < 256) && hdisplay && vdisplay);		
 		
 EnableCounter enable_counter(
 									  .clock(clock),
@@ -47,13 +47,13 @@ SyncCounter sync_counter(
 bigMux big_mux(
 		.d0(16'b0),
 		.d1(rgb_input),
-		.s(mux_input),
+		.s(display_image),
 		.y(rgb_output)
 );
 
 AddressConverter addy_convert(
-		.hsync_count(row_count),
-		.vsync_count(column_count),
+		.hsync_count(column_count),
+		.vsync_count(row_count),
 		.pixeladdress(pixeladdress)
 );
 

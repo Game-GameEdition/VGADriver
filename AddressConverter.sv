@@ -5,7 +5,9 @@ module AddressConverter(
 );
 
 always_comb begin
-	pixeladdress = (vsync_count*640)+hsync_count;
-	end
-	
-endmodule	
+    if (hsync_count < 256 && vsync_count < 256)
+        pixeladdress = (vsync_count * 256) + hsync_count;
+    else
+        pixeladdress = 19'd0;  // outside image bounds, address 0
+end
+endmodule

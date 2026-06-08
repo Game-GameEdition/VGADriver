@@ -6,8 +6,8 @@ module SyncCounter(
 						 output logic vdisplay,
 						 output logic vsync,
 						 output logic hsync,
-						 output logic h_display_count,
-						 output logic v_display_count
+						 output logic [9:0] h_display_count,
+						 output logic [9:0] v_display_count
 						 );
 						 
 // hdisplay and vdisplay are high during their respective display intervals and low everywhere else
