@@ -1,0 +1,87 @@
+C:/ECE204/oiwejg/VGADriver/AddressConverter.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/AddressConverter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module AddressConverter
+
+Top level modules:
+	AddressConverter
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/Counter.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/Counter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Counter
+
+Top level modules:
+	Counter
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RegisterNBit
+
+Top level modules:
+	RegisterNBit
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/VGADriver.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/VGADriver.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGADriver
+
+Top level modules:
+	VGADriver
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VSyncCounter
+
+Top level modules:
+	VSyncCounter
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux_4
+-- Compiling module Decoder2_4
+
+Top level modules:
+	Mux_4
+	Decoder2_4
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/bigMux.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/bigMux.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bigMux
+
+Top level modules:
+	bigMux
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/SyncCounter.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/SyncCounter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SyncCounter
+
+Top level modules:
+	SyncCounter
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module HSyncCounter
+
+Top level modules:
+	HSyncCounter
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/VGATestbench.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/VGATestbench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VgaTestbench
+
+Top level modules:
+	VgaTestbench
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/EnableCounter.sv {1 {vlog -work work -sv -stats=none C:/ECE204/oiwejg/VGADriver/EnableCounter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module EnableCounter
+
+Top level modules:
+	EnableCounter
+
+} {} {}} C:/ECE204/oiwejg/VGADriver/ROMink.v {1 {vlog -work work -stats=none C:/ECE204/oiwejg/VGADriver/ROMink.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ROMink
+
+Top level modules:
+	ROMink
+
+} {} {}}

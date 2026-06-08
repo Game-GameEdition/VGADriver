@@ -9,52 +9,102 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_pro/21.1
-vCounter
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1780800235
+vAddressConverter
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1780885896
 !i10b 1
-!s100 z0;Fn<M@OQ2SEnAcPZHg[2
-I_e1@j8k<0]31mXRcO]D2Y1
+!s100 14jUHK<8J<]aX@;]>NQC[1
+IELf3dP7<iYQi;V74Lb=1a2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 AddressConverter_sv_unit
 S1
-Z2 dC:/ECE204/Final Project
-w1778635493
-8C:/ECE204/Final Project/Counter.sv
-FC:/ECE204/Final Project/Counter.sv
-!i122 116
-L0 2 27
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OV;L;2021.1;73
+Z3 dC:/ECE204/oiwejg/VGADriver
+w1780883921
+8C:/ECE204/oiwejg/VGADriver/AddressConverter.sv
+FC:/ECE204/oiwejg/VGADriver/AddressConverter.sv
+L0 1
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1780800235.000000
-!s107 C:/ECE204/Final Project/Counter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/Counter.sv|
+Z5 !s108 1780885896.000000
+!s107 C:/ECE204/oiwejg/VGADriver/AddressConverter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/AddressConverter.sv|
 !i113 1
 Z6 o-work work -sv
 Z7 tCvgOpt 0
-n@counter
-vDecoder2_4
+n@address@converter
+vbigMux
 R0
 R1
 !i10b 1
-!s100 hQLBHkX4DczGS6Qc_o2_22
-IUWM6RjVVIg?=d=`Tlj@4W0
-S1
+!s100 DFd]I5mR95b:O;maj`0zF0
+ISRO357[b9GFddHafR:mP91
 R2
-Z8 w1780520376
-Z9 8C:/ECE204/Final Project/MuxandDecoder.sv
-Z10 FC:/ECE204/Final Project/MuxandDecoder.sv
-!i122 119
-L0 9 13
+!s105 bigMux_sv_unit
+S1
 R3
+w1780885803
+8C:/ECE204/oiwejg/VGADriver/bigMux.sv
+FC:/ECE204/oiwejg/VGADriver/bigMux.sv
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-Z11 !s107 C:/ECE204/Final Project/MuxandDecoder.sv|
-Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/MuxandDecoder.sv|
+!s107 C:/ECE204/oiwejg/VGADriver/bigMux.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/bigMux.sv|
+!i113 1
+R6
+R7
+nbig@mux
+vCounter
+R0
+R1
+!i10b 1
+!s100 [EgL^_7Lnk3`Un4^^CjX<1
+ILKO[c@8chH6GYPQVocLIC0
+R2
+!s105 Counter_sv_unit
+S1
+R3
+Z8 w1780878516
+8C:/ECE204/oiwejg/VGADriver/Counter.sv
+FC:/ECE204/oiwejg/VGADriver/Counter.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/ECE204/oiwejg/VGADriver/Counter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/Counter.sv|
+!i113 1
+R6
+R7
+n@counter
+vDecoder2_4
+R0
+Z9 !s110 1780885897
+!i10b 1
+!s100 [dFG_``XI1EE=0mf^2@FH3
+I[_GzLJ[4FC66>A1OgQ<DA0
+R2
+Z10 !s105 MuxandDecoder_sv_unit
+S1
+R3
+R8
+Z11 8C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv
+Z12 FC:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv
+L0 9
+R4
+r1
+!s85 0
+31
+Z13 !s108 1780885897.000000
+Z14 !s107 C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/MuxandDecoder.sv|
 !i113 1
 R6
 R7
@@ -63,198 +113,242 @@ vEnableCounter
 R0
 R1
 !i10b 1
-!s100 bN^kB@SMVVNLkCW2dR4lO3
-ImBg7CVRRWH_ZTaXbk`fC00
-S1
+!s100 QC^3L::giij:G71DjO9V02
+IDKiA;i772mE>W>zcd>if;1
 R2
-w1780519860
-8C:/ECE204/Final Project/EnableCounter.sv
-FC:/ECE204/Final Project/EnableCounter.sv
-!i122 117
-L0 3 29
+!s105 EnableCounter_sv_unit
+S1
 R3
+R8
+8C:/ECE204/oiwejg/VGADriver/EnableCounter.sv
+FC:/ECE204/oiwejg/VGADriver/EnableCounter.sv
+L0 3
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/ECE204/Final Project/EnableCounter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/EnableCounter.sv|
+!s107 C:/ECE204/oiwejg/VGADriver/EnableCounter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/EnableCounter.sv|
 !i113 1
 R6
 R7
 n@enable@counter
+vFixedROMink
+!s110 1780884918
+!i10b 1
+!s100 VfK?B^THbWnX5^jjV5l6`0
+IS_LZ[WhReHk?^PAczEb<H2
+R2
+R3
+w1780883011
+8C:/ECE204/oiwejg/VGADriver/FixedROMink.v
+FC:/ECE204/oiwejg/VGADriver/FixedROMink.v
+Z16 L0 40
+R4
+r1
+!s85 0
+31
+!s108 1780884918.000000
+!s107 C:/ECE204/oiwejg/VGADriver/FixedROMink.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/ECE204/oiwejg/VGADriver/FixedROMink.v|
+!i113 1
+Z17 o-work work
+R7
+n@fixed@r@o@mink
 vHSyncCounter
 R0
 R1
 !i10b 1
-!s100 M`kUcK8DN0Dbl9YGP;>[c3
-IXN6E0UNLNJZnDbUK`77aa1
-S1
+!s100 QzlHkm6l[Cgb4dHEW:Na[0
+I;Qg_g680FITC59X0^c>cF0
 R2
-w1780800223
-8C:/ECE204/Final Project/HSyncCounter.sv
-FC:/ECE204/Final Project/HSyncCounter.sv
-!i122 118
-L0 1 51
+!s105 HSyncCounter_sv_unit
+S1
 R3
+w1780883199
+8C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv
+FC:/ECE204/oiwejg/VGADriver/HSyncCounter.sv
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/ECE204/Final Project/HSyncCounter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/HSyncCounter.sv|
+!s107 C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/HSyncCounter.sv|
 !i113 1
 R6
 R7
 n@h@sync@counter
 vMux_4
 R0
-R1
-!i10b 1
-!s100 XRfSHV[T<iEXF^6>W>K_<0
-I>eY:3Lmhmggb50g?a9=jB2
-S1
-R2
-R8
 R9
+!i10b 1
+!s100 oNI>aQ2YDT=eVHMkGEBU13
+IBK@nRAARK2U6ZWea7^laM3
+R2
 R10
-!i122 119
-L0 1 7
+S1
 R3
+R8
+R11
+R12
+L0 1
 R4
 r1
 !s85 0
 31
-R5
-R11
-R12
+R13
+R14
+R15
 !i113 1
 R6
 R7
 n@mux_4
 vRegisterNBit
 R0
-R1
+R9
 !i10b 1
-!s100 IHPQ6_Jo>PUkcYleI_]3G1
-IC_7KP8WX6j2RIgmeFLGTT2
-S1
+!s100 i`WCjdSl_kA4BBaQ4mj^?0
+IGcf1@z>z]?`4TPH0<D8gZ2
 R2
-w1778621119
-8C:/ECE204/Final Project/RegisterFourBit.sv
-FC:/ECE204/Final Project/RegisterFourBit.sv
-!i122 120
-L0 2 21
+!s105 RegisterFourBit_sv_unit
+S1
 R3
+R8
+8C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv
+FC:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv
+L0 2
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/ECE204/Final Project/RegisterFourBit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/RegisterFourBit.sv|
+R13
+!s107 C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/RegisterFourBit.sv|
 !i113 1
 R6
 R7
 n@register@n@bit
-vSyncCounter
-R0
-R1
+vROMink
+R9
 !i10b 1
-!s100 A2YifBjl^1cRK:2gzaL?`2
-Ic9BZOBY`Eo05S4G@Q:Abk1
-S1
+!s100 dnfY=<jR_i;DmS6;H:i^m3
+I7^;]i2Z<[SdDM<ClPN60K1
 R2
-w1780527997
-8C:/ECE204/Final Project/SyncCounter.sv
-FC:/ECE204/Final Project/SyncCounter.sv
-!i122 121
-L0 1 34
 R3
+w1780879368
+8C:/ECE204/oiwejg/VGADriver/ROMink.v
+FC:/ECE204/oiwejg/VGADriver/ROMink.v
+R16
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/ECE204/Final Project/SyncCounter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/SyncCounter.sv|
+R13
+!s107 C:/ECE204/oiwejg/VGADriver/ROMink.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/ECE204/oiwejg/VGADriver/ROMink.v|
+!i113 1
+R17
+R7
+n@r@o@mink
+vSyncCounter
+R0
+R9
+!i10b 1
+!s100 fB3d4KmoGhDEW[AjTE<JN3
+IU8`>W::>fhMY1e79izUGO3
+R2
+!s105 SyncCounter_sv_unit
+S1
+R3
+Z18 w1780883198
+8C:/ECE204/oiwejg/VGADriver/SyncCounter.sv
+FC:/ECE204/oiwejg/VGADriver/SyncCounter.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/ECE204/oiwejg/VGADriver/SyncCounter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/SyncCounter.sv|
 !i113 1
 R6
 R7
 n@sync@counter
 vVGADriver
 R0
-R1
+R9
 !i10b 1
-!s100 kGo0Jz>I6f6K6YT1jlSCz2
-IM`;d0j=B:fK9b05S[67X70
-S1
+!s100 SoP=Q<E5Cc`ZD^R62>L]D2
+ILl:d;HMnV[>Bl6[eFUXRZ1
 R2
-w1780528663
-8C:/ECE204/Final Project/VGADriver.sv
-FC:/ECE204/Final Project/VGADriver.sv
-!i122 122
-L0 1 81
+!s105 VGADriver_sv_unit
+S1
 R3
+w1780885665
+8C:/ECE204/oiwejg/VGADriver/VGADriver.sv
+FC:/ECE204/oiwejg/VGADriver/VGADriver.sv
+L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/ECE204/Final Project/VGADriver.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/VGADriver.sv|
+R13
+!s107 C:/ECE204/oiwejg/VGADriver/VGADriver.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/VGADriver.sv|
 !i113 1
 R6
 R7
 n@v@g@a@driver
 vVgaTestbench
 R0
-R1
+R9
 !i10b 1
-!s100 DF?<:_UY6o@hjB:[YCQ3z2
-IWEV3VloZGaQ]]j_zeMfF;1
-S1
+!s100 ?eW<z4SOc8@J^>GbYYF:z0
+IA]46DG[R<RRkkjKi4J?c01
 R2
-w1780696694
-8C:/ECE204/Final Project/VGATestbench.sv
-FC:/ECE204/Final Project/VGATestbench.sv
-!i122 124
-L0 30 247
+!s105 VGATestbench_sv_unit
+S1
 R3
+w1780884914
+8C:/ECE204/oiwejg/VGADriver/VGATestbench.sv
+FC:/ECE204/oiwejg/VGADriver/VGATestbench.sv
+L0 31
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/ECE204/Final Project/VGATestbench.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/VGATestbench.sv|
+R13
+!s107 C:/ECE204/oiwejg/VGADriver/VGATestbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/VGATestbench.sv|
 !i113 1
 R6
 R7
 n@vga@testbench
 vVSyncCounter
 R0
-R1
+R9
 !i10b 1
-!s100 T9ZknLPFcMhOnf0X1aG;N0
-IBeXXBD0:g]ASRY=]]d@L41
-S1
+!s100 5WHM`zV>6RJN<6Bc^EcHV0
+I`<aB4RQ1a[aXonkZ<=jE62
 R2
-w1780524486
-8C:/ECE204/Final Project/VSyncCounter.sv
-FC:/ECE204/Final Project/VSyncCounter.sv
-!i122 123
-L0 1 48
+!s105 VSyncCounter_sv_unit
+S1
 R3
+R18
+8C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv
+FC:/ECE204/oiwejg/VGADriver/VSyncCounter.sv
+L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/ECE204/Final Project/VSyncCounter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/Final Project/VSyncCounter.sv|
+R13
+!s107 C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/ECE204/oiwejg/VGADriver/VSyncCounter.sv|
 !i113 1
 R6
 R7

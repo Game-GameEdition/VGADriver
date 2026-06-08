@@ -60,30 +60,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "red_control[0]",
-					"strict" : false
-				},
-				{
-					"name" : "red_control[1]",
-					"strict" : false
-				},
-				{
-					"name" : "green_control[0]",
-					"strict" : false
-				},
-				{
-					"name" : "green_control[1]",
-					"strict" : false
-				},
-				{
-					"name" : "blue_control[0]",
-					"strict" : false
-				},
-				{
-					"name" : "blue_control[1]",
-					"strict" : false
-				},
-				{
 					"name" : "clock",
 					"strict" : false
 				},

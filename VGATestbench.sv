@@ -6,6 +6,7 @@
  */
 
 // Horizontal timing
+`timescale 1 ps / 1 ps
 `define H_PULSE_WIDTH (96)
 `define H_BACK_PORCH  (48)
 `define H_DISPLAY_LEN (640)
@@ -39,9 +40,6 @@ module VgaTestbench();
     // Module inputs
     logic clock;
     logic reset_n;
-    logic [1:0] red_control;
-    logic [1:0] green_control;
-    logic [1:0] blue_control;
 
     // Module outputs
     logic hsync;
@@ -54,9 +52,6 @@ module VgaTestbench();
      * Select input color.  Use full intensity red, green, and blue to display
      * white.
      */
-    assign red_control   = 2'b11;
-    assign green_control = 2'b11;
-    assign blue_control  = 2'b11;
 
     /*
      * Define a clock to oscillate with a period of 2 ps.
@@ -77,9 +72,6 @@ module VgaTestbench();
 	 VGADriver dut(
 	 .clock(clock),
 	 .reset_n(reset_n),
-	 .red_control(red_control),
-	 .green_control(green_control),
-	 .blue_control(blue_control),
 	 .hsync(hsync),
 	 .vsync(vsync),
 	 .red_display(red_display),

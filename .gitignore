@@ -1,0 +1,46 @@
+# Quartus generated
+db/
+incremental_db/
+output_files/
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.done
+*.pin
+*.flow.rpt
+*.fit.rpt
+*.map.rpt
+*.asm.rpt
+*.sta.rpt
+*.jdi
+*.pof
+*.sof
+*.rbf
+
+# ModelSim
+work/
+transcript
+vsim.wlf
+*.vcd
+*.wlf
+*.log
+
+# Quartus IP
+*.qip
+*.cmp
+*.bsf
+*.html
+synth/
+simulation/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.orig
+*.swp
+*~

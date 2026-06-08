@@ -1,5 +1,5 @@
 Assembler report for VGADriverFinal
-Fri Jun  5 14:45:04 2026
+Sun Jun  7 19:30:15 2026
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/ECE204/Final Project/output_files/VGADriverFinal.sof
+  5. Assembler Device Options: C:/ECE204/oiwejg/VGADriver/output_files/VGADriverFinal.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Jun  5 14:45:04 2026 ;
+; Assembler Status      ; Successful - Sun Jun  7 19:30:15 2026 ;
 ; Revision Name         ; VGADriverFinal                        ;
 ; Top-level Entity Name ; VGADriver                             ;
 ; Family                ; MAX 10                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------+
-; Assembler Generated Files                               ;
-+---------------------------------------------------------+
-; File Name                                               ;
-+---------------------------------------------------------+
-; C:/ECE204/Final Project/output_files/VGADriverFinal.sof ;
-+---------------------------------------------------------+
++------------------------------------------------------------+
+; Assembler Generated Files                                  ;
++------------------------------------------------------------+
+; File Name                                                  ;
++------------------------------------------------------------+
+; C:/ECE204/oiwejg/VGADriver/output_files/VGADriverFinal.sof ;
++------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Device Options: C:/ECE204/Final Project/output_files/VGADriverFinal.sof ;
-+----------------+------------------------------------------------------------------+
-; Option         ; Setting                                                          ;
-+----------------+------------------------------------------------------------------+
-; JTAG usercode  ; 0x000796E1                                                       ;
-; Checksum       ; 0x000796E1                                                       ;
-+----------------+------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/ECE204/oiwejg/VGADriver/output_files/VGADriverFinal.sof ;
++----------------+---------------------------------------------------------------------+
+; Option         ; Setting                                                             ;
++----------------+---------------------------------------------------------------------+
+; JTAG usercode  ; 0x0007C359                                                          ;
+; Checksum       ; 0x0007C359                                                          ;
++----------------+---------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Fri Jun  5 14:45:02 2026
+    Info: Processing started: Sun Jun  7 19:30:15 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off VGADriverFinal -c VGADriverFinal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4755 megabytes
-    Info: Processing ended: Fri Jun  5 14:45:04 2026
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sun Jun  7 19:30:15 2026
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
